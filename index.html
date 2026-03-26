@@ -6,20 +6,68 @@
     <title>Document</title>
     <!--Added CSS code for my table-->
     <style> 
+body {
+    background-color: #d2d1d2; 
+}
+
+#right_block {
+    float: right;
+    margin-right: 200px;
+    text-align: center;
+}    
+
+#welcome {
+    text-align: center;
+    text-decoration: underline;
+}
+
+img {
+    background-color: black;
+    padding: 10px;
+}
+
 table, th, td { 
-   border: 2px solid gray; 
+   border: 2px solid black; 
+   margin-top: 10px;
 } 
+
+table tr:nth-child(1) {
+    background-color: #c10017;
+}
+
+h1 {
+    background-color: #c10017;
+    text-align: center;
+}
+
+#hover_red:hover {
+    color: #c10017;
+}
+
+h2::before {
+    content: "◆ ";
+    color: #c10017;
+}
+
+h2::after {
+    content: " ◆";
+    color: #c10017;
+}
 </style>
 </head>
 <body>
     <!--Placeholder name for my website-->
     <h1>Matthew Gering's Website</h1>
 
-    <p>Welcome! Here is some basic information about me:</p>
+    <p id="welcome">Welcome! Here is some basic information about me:</p>
 
-    <img src="computer_science.jpg" alt="Computer Science" width="500" height="250">
+    <br>
+    <br>
 
-    <table>
+    <div id="right_block">
+        <img src="main_pic.jpg" alt="main pic" width="250" height="250">
+        
+        <table>
         <caption>Academic Plan</caption>
         <tr>
             <th>Major</th>
@@ -31,8 +79,9 @@ table, th, td {
             <td>Mathematics & Statistics</td>
             <td>2028</td>
         </tr>
-    </table>
-    
+        </table>
+    </div>
+
     <section>
         <h2>Favorite Movies</h2>
         <ol>
@@ -50,6 +99,24 @@ table, th, td {
             <li>Hanging out with friends</li>
         </ul>
     </section>
+
+    <br>
+
+    <p>
+        Check out my favorite show on the internet!:
+        <a href="https://www.youtube.com/@SamHydeShow" id="hover_red" target="_blank">The Sam Hyde Show</a>
+    
+    </p>
+
+    <br> 
+    
+    <p>
+        Email me at:
+        <br>
+        <a href="mailto:gerim05@uwgb.edu.com" id="hover_red">gerim05@uwgb.edu.com</a>
+        <br>
+        <a href="mailto:geringmatt@icloud.com" id="hover_red">geringmatt@icloud.com</a>
+    </p>
 
 </body>
 </html>
